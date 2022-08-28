@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  research:
+    build: .
+    command: python -m pytest
+    volumes:
+      - .:/code

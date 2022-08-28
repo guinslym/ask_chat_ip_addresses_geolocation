@@ -49,7 +49,7 @@ def practiceQueues(chat):
 
 
 def isChat(chat):
-    return chat["protocol"] != "twilio"
+    return chat["protocol"] not in ["twilio", "sms"]
 
 
 def find_geolocation_from_ip_addresses(ip_unique):
